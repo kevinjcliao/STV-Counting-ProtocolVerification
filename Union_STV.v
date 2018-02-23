@@ -2406,6 +2406,7 @@ Proof.
  specialize (le_lt_eq_dec st (length (proj1_sig e)) Hypo3);intro H4.
  destruct H4 as [H5 | H5].
  specialize (proj2_sig e);intro H6.
+ simpl in H6.
  omega.
  exists ewin.
  exists (winners (proj1_sig e)).
